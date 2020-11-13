@@ -1,3 +1,7 @@
 .container {
-  padding: 40px;
+  width: 96%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  height: 400px;
 }
