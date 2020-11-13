@@ -1,0 +1,20 @@
+.button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  margin: 6px;
+  padding: 0;
+  border: none;
+  z-index: 1;
+  background: none;
+  cursor: pointer;
+}
+
+.button--prev {
+  left: 0;
+}
+
+.button--next {
+  right: 0;
+}
