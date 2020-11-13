@@ -15,7 +15,7 @@ export const Movies = ({ translateValue }) => {
       className="movies-container"
       style={{
         transform: `translateX(${translateValue}%)`,
-        transition: 'all 300ms ease-in-out'
+        transition: 'all 600ms ease-in-out'
       }}>
       {movies.map((movie, index) => {
         return (

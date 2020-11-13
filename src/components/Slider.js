@@ -3,7 +3,7 @@ import { Movies } from './Movies';
 import { Button } from './Button';
 import './styles/slider.css';
 
-const NUMBER_OF_PANELS = 5;
+const NUMBER_OF_PANELS = 4;
 const TRANSLATE_WIDTH = 100;
 
 export const Slider = () => {
@@ -25,14 +25,17 @@ export const Slider = () => {
   };
 
   return (
-    <section className="container">
-      {count > 0 && (
-        <Button prev onClick={goToPrev} />
-      )}
-      <Movies translateValue={translateValue} />
-      {count < (NUMBER_OF_PANELS - 1) && (
-        <Button next onClick={goToNext} />
-      )}
-    </section>
+    <>
+      <h1 className="header">Trending</h1>
+      <section className="container">
+        {count > 0 && (
+          <Button prev onClick={goToPrev} />
+        )}
+        <Movies translateValue={translateValue} />
+        {count < (NUMBER_OF_PANELS - 1) && (
+          <Button next onClick={goToNext} />
+        )}
+      </section>
+    </>
   );
 }

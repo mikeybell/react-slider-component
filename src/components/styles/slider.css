@@ -1,6 +1,13 @@
 .container {
   width: 96%;
   margin: 0 auto;
+  padding-top: 10px;
   position: relative;
   overflow: hidden;
+}
+
+.header {
+  color: #FFF;
+  margin: 20px auto;
+  width: 96%;
 }
