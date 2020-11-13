@@ -12,10 +12,36 @@
 
 .movie-container {
   flex: 0 0 auto;
-  width: calc(20% - 12px);
+  width: calc(25% - 12px);
   padding: 6px;
+  transition: all 200ms ease-in-out;
+}
+
+.movie-container:hover {
+  transform: translateY(-16px);
 }
 
 .movie-poster {
   max-width: 100%;
+}
+
+.button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  margin: 6px;
+  padding: 0;
+  border: none;
+  z-index: 1;
+  background: none;
+  cursor: pointer;
+}
+
+.button--prev {
+  left: 0;
+}
+
+.button--next {
+  right: 0;
 }
