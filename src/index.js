@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Movies } from './components/Movies';
+import { Slider } from './components/Slider';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Movies />
+    <Slider />
   </React.StrictMode>,
   document.getElementById('root')
 );
