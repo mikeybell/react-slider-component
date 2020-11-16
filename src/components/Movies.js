@@ -1,13 +1,18 @@
 import React from 'react';
 import { IMAGE_PATH } from './lib/constants';
 import { useMovies } from './hooks/useMovies';
+import { Loading } from './Loading';
 import './styles/movies.css';
 
 export const Movies = ({ translateValue }) => {
-  const movies = useMovies();
+  const { movies, error } = useMovies();
 
-  if (movies.length === 0) {
-    return <p>Loading...</p>
+  if (movies.length === 0 && !error) {
+    return <Loading />;
+  }
+
+  if (error) {
+    return <p className="error-message">{error.message}</p>;
   }
 
   return (

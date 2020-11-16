@@ -24,3 +24,7 @@
 .movie-poster {
   max-width: 100%;
 }
+
+.error-message {
+  color: #F24444;
+}

@@ -1,0 +1,12 @@
+@keyframes spin {
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+.loading-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin 1500ms linear infinite;
+}
