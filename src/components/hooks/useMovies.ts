@@ -4,12 +4,13 @@ import {
   BASE_PATH,
   TRENDING_MOVIES,
 } from '../lib/constants';
+import { Movies } from './types';
 
-const URL = `${BASE_PATH}${TRENDING_MOVIES}${API_KEY}`
+const URL = `${BASE_PATH}${TRENDING_MOVIES}${API_KEY}`;
 
-export const useMovies = () => {
+export const useMovies = (): Movies => {
   const [movies, setMovies] = useState([]);
-  const [error, setError] = useState();
+  const [error, setError] = useState("");
 
   useEffect(() => {
     getMovies();
@@ -22,8 +23,7 @@ export const useMovies = () => {
       const data = await res.json();
       setMovies(data.results)
     } catch (err) {
-      console.log("ERROR", err)
-      setError(err);
+      setError(err.message);
     }
   }
 

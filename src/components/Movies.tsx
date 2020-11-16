@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { IMAGE_PATH } from './lib/constants';
 import { useMovies } from './hooks/useMovies';
 import { Loading } from './Loading';
 import './styles/movies.css';
 
-export const Movies = ({ translateValue }) => {
+interface Props {
+  translateValue: number;
+}
+
+export const Movies: FunctionComponent<Props> = ({ translateValue }) => {
   const { movies, error } = useMovies();
 
   if (movies.length === 0 && !error) {
@@ -12,7 +16,7 @@ export const Movies = ({ translateValue }) => {
   }
 
   if (error) {
-    return <p className="error-message">{error.message}</p>;
+    return <p className="error-message">{error}</p>;
   }
 
   return (
@@ -22,11 +26,10 @@ export const Movies = ({ translateValue }) => {
         transform: `translateX(${translateValue}%)`,
         transition: 'all 600ms ease-in-out'
       }}>
-      {movies.map((movie, index) => {
+      {movies.map((movie) => {
         return (
           <li
             className="movie-container"
-            index={index}
             key={movie.id}
           >
             <img

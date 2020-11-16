@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, FunctionComponent } from 'react';
 import { Movies } from './Movies';
 import { Button } from './Button';
 import './styles/slider.css';
@@ -6,18 +6,18 @@ import './styles/slider.css';
 const NUMBER_OF_PANELS = 4;
 const TRANSLATE_WIDTH = 100;
 
-export const Slider = () => {
+export const Slider: FunctionComponent = () => {
   const [count, setCount] = useState(0);
   const [translateValue, setTranslateValue] = useState(0);
 
-  const goToPrev = () => {
+  const goToPrev = (): void => {
     if (count > 0) {
       setCount(count - 1);
       setTranslateValue(translateValue + TRANSLATE_WIDTH)
     };
   };
 
-  const goToNext = () => {
+  const goToNext = (): void => {
     if (count < NUMBER_OF_PANELS) {
       setCount(count + 1);
       setTranslateValue(translateValue - TRANSLATE_WIDTH)
