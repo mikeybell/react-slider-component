@@ -4,10 +4,11 @@
   padding-top: 10px;
   position: relative;
   overflow: hidden;
+  display: flex;
 }
 
 .header {
-  color: #FFF;
+  color: #00c1f3;
   margin: 20px auto;
   width: 96%;
 }

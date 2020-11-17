@@ -28,13 +28,17 @@ export const Slider: FunctionComponent = () => {
     <>
       <h1 className="header">Trending</h1>
       <section className="container">
-        {count > 0 && (
-          <Button prev onClick={goToPrev} />
-        )}
+        <Button
+          prev
+          disabled={count === 0 }
+          onClick={goToPrev}
+        />
         <Movies translateValue={translateValue} />
-        {count < (NUMBER_OF_PANELS - 1) && (
-          <Button next onClick={goToNext} />
-        )}
+        <Button
+          next
+          disabled={count === (NUMBER_OF_PANELS - 1)}
+          onClick={goToNext}
+        />
       </section>
     </>
   );

@@ -1,20 +1,14 @@
 .button {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 60px;
-  margin: 6px;
+  width: 48px;
+  margin: 6px 0;
   padding: 0;
   border: none;
   z-index: 1;
-  background: none;
+  background: rgba(0,0,0,0.5);
   cursor: pointer;
 }
 
-.button--prev {
-  left: 0;
-}
-
-.button--next {
-  right: 0;
+.disabledStyle {
+  opacity: 0.2;
+  cursor: initial;
 }
