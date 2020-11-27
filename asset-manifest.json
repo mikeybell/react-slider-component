@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-slider-component/static/css/main.9eaa20b2.chunk.css",
+    "main.js": "/react-slider-component/static/js/main.82995f5d.chunk.js",
+    "main.js.map": "/react-slider-component/static/js/main.82995f5d.chunk.js.map",
+    "runtime-main.js": "/react-slider-component/static/js/runtime-main.5d740cf5.js",
+    "runtime-main.js.map": "/react-slider-component/static/js/runtime-main.5d740cf5.js.map",
+    "static/js/2.66837263.chunk.js": "/react-slider-component/static/js/2.66837263.chunk.js",
+    "static/js/2.66837263.chunk.js.map": "/react-slider-component/static/js/2.66837263.chunk.js.map",
+    "index.html": "/react-slider-component/index.html",
+    "static/css/main.9eaa20b2.chunk.css.map": "/react-slider-component/static/css/main.9eaa20b2.chunk.css.map",
+    "static/js/2.66837263.chunk.js.LICENSE.txt": "/react-slider-component/static/js/2.66837263.chunk.js.LICENSE.txt",
+    "static/media/arrow_next.14b1557b.svg": "/react-slider-component/static/media/arrow_next.14b1557b.svg",
+    "static/media/arrow_prev.f853b737.svg": "/react-slider-component/static/media/arrow_prev.f853b737.svg",
+    "static/media/loading.88310be3.svg": "/react-slider-component/static/media/loading.88310be3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5d740cf5.js",
+    "static/js/2.66837263.chunk.js",
+    "static/css/main.9eaa20b2.chunk.css",
+    "static/js/main.82995f5d.chunk.js"
+  ]
+}
